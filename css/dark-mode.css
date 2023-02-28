@@ -1,0 +1,68 @@
+/* 
+    --cor00: #000000;
+    --cor00: #ffffff;
+    --cor01: #757575;
+    --cor02: #000000;
+    --cor03: #000000;
+    --cor04: #e7e7e7;
+    --shadow-light: #0e0e0e2c;
+    --filter-bg-light: #ffffffbe; 
+*/
+
+/* HEADER */
+.body-dark,
+.menu-hamburguer-dark,
+.menu-mobile-dark {
+    background-color: #000000;
+}
+
+.menu-mobile-dark:hover {
+    color: #c4c4c4;
+}
+
+.brush-dark {
+    color: #757575;
+}
+.brush-dark:hover {
+    color: #c4c4c4;
+}
+
+/* TÍTULOS */
+.all-title-dark {
+    color: #c4c4c4;
+}
+
+/* SECTIONS */
+.project-dark {
+    /* box-shadow: 0 0 10px 0px #0e0e0e2c; */
+    transition: .5s;
+}
+
+.project-dark:hover {
+    box-shadow: 0 0 10px 0px #4444449c;
+    transition: .5s;
+}
+
+.contact-icon-dark {
+    color: #c4c4c4;
+}
+
+.local-a-dark {
+    color: #757575;
+}
+
+.local-a-dark:hover {
+    color: #c4c4c4;
+}
+
+.label-dark {
+    color: #757575;
+}
+
+.form-field-dark {
+    background-color: #1111117e;
+    color: #adadad;
+    letter-spacing: .1rem;
+    border: 1px solid #181818;
+}
+
