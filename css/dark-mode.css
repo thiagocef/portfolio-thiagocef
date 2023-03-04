@@ -29,18 +29,23 @@
 
 /* TÍTULOS */
 .all-title-dark {
-    color: #c4c4c4;
+    color: #ebebeb;
 }
 
 /* SECTIONS */
 .project-dark {
     /* box-shadow: 0 0 10px 0px #0e0e0e2c; */
     transition: .5s;
+    border: 1px solid #4444449c;
 }
 
 .project-dark:hover {
     box-shadow: 0 0 10px 0px #4444449c;
     transition: .5s;
+}
+
+.skill-dark {
+    border: 1px solid #4444449c;
 }
 
 .contact-icon-dark {

@@ -6,7 +6,8 @@ const brush = document.querySelector('.fa-brush'),
       contactIcon = document.querySelectorAll('.contact-icon'),
       local = document.querySelectorAll('.contact-container a'),
       label = document.querySelectorAll('label'),
-      formField = document.querySelectorAll('.form-field')
+      formField = document.querySelectorAll('.form-field'),
+      skill = document.querySelectorAll('.skill')
 
 function darkMode() {
     console.log('darkMode ativado')
@@ -29,6 +30,10 @@ function darkMode() {
         item.classList.toggle('project-dark')
     })
 
+    skill.forEach(item => {
+        item.classList.toggle('skill-dark')
+    })
+
     contactIcon.forEach(item => {
         item.classList.toggle('contact-icon-dark')
     })
@@ -44,8 +49,8 @@ function darkMode() {
     formField.forEach(item => {
         item.classList.toggle('form-field-dark')
     })
+
+
 }
 
 brush.addEventListener('click', darkMode)
-
-console.log(formField)

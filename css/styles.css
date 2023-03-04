@@ -364,6 +364,7 @@ main {
     grid-template-rows: 2fr;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .project {
@@ -373,7 +374,8 @@ main {
     padding: 15px;
     justify-content: space-between;
     transition: .5s;
-
+    overflow: hidden;
+    border: 1px solid var(--cor04);
 }
 
 .project:hover {
@@ -389,7 +391,7 @@ main {
 .img-project:hover {
     cursor: none;
 
-    animation: animate-img 1s ease 0s 1 normal forwards;
+    animation: animate-img 1.3s ease 0s 1 normal forwards;
 }
 @keyframes animate-img {
     0% {
@@ -398,8 +400,8 @@ main {
 	}
     
 	100% {
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-		transform: scale(1.4);
+        /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); */
+		transform: scale(1.25);
 	}
 }
 
@@ -454,7 +456,9 @@ lord-icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 30px 0;
+    border: 1px solid var(--cor04);
+
 }
 
 .skill i {
