@@ -37,14 +37,14 @@ a:visited {
 :root {
     --cor00: #ffffff;
     --cor01: #757575;
-    --cor02: #000000;
+    /* --cor02: #000000; */
     --cor03: #000000;
     --cor04: #e7e7e7;
     --shadow-light: #0e0e0e2c;
     --filter-bg-light: #ffffffbe;
     
     /* --cor00: #000000; */
-    /* --cor02: #757575; */
+    --cor02: #202124;
     /* --cor03: #a31343; */
     /* --cor03: #2c2c70; */
     /* --cor03: #e75419; */
@@ -280,7 +280,7 @@ main {
 }
 
 .title {
-    color: var(--cor03);
+    color: var(--cor02);
     font-size: 6.5rem;
     line-height: 5rem;
     letter-spacing: .3rem;
@@ -323,7 +323,8 @@ main {
 }
 
 .img-profile {
-    background-color: var(--cor02);
+    /* background-color: var(--cor02); */
+    /* 202124 */
     padding: 30px 30px 0 30px;
 }
 

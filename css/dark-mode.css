@@ -13,7 +13,8 @@
 .body-dark,
 .menu-hamburguer-dark,
 .menu-mobile-dark {
-    background-color: #000000;
+    background-color: #202124;
+    /*#161B22*/
 }
 
 .menu-mobile-dark:hover {
