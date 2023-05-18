@@ -28,6 +28,9 @@
     <!-- LINK DARK MODE -->
     <link rel="stylesheet" href="/css/dark-mode.css">
 
+    <!-- LINK ANIMAÇÃO AO SCROLL -->
+    <link rel="stylesheet" href="/css/anime-scroll.css">
+
     <!-- FONTS GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,13 +45,13 @@
 </head>
 <body>
     <!-- TELA DE BOAS VINDAS -->
-    <div class="loader">
+    <div class="loader oculto">
         <p><span>welcome</span></p>
         <p>bem-vindo</p>
         <p><span>bienvenido</span></p>
     </div> 
 
-    <div class="after-loader oculto">
+    <div class="after-loader">
         <header>
             <nav class="menu-nav" id="home">
                 <div class="menu-hamburguer">
@@ -59,7 +62,7 @@
                     </ul>
             
                     <ul class="menu-mobile">
-                        <li><a href="">home</a></li>
+                        <!-- <li><a href="">home</a></li> -->
                         <li><a href="#projects">projetos</a></li>
                         <li><a href="#skills">habilidades</a></li>
                         <li><a href="#contact">contato</a></li>
@@ -67,7 +70,7 @@
                 </div>
                 
                 <ul class="nav-bar">
-                    <li><a href="">home</a></li>
+                    <!-- <li><a href="">home</a></li> -->
                     <li><a href="#projects">projetos</a></li>
                     <li><a href="#skills">habilidades</a></li>
                     <li><a href="#contact">contato</a></li>
@@ -82,7 +85,7 @@
         </header>
 
         <main>
-            <section class="presentation">
+            <section class="presentation" id="presentation">
                 <article class="about">
                     <h1 class="title all-title">Olá, pessoal!</h1>
                     
@@ -99,7 +102,7 @@
             </div>
 
             <section class="projects-container">
-                <article class="project">
+                <article class="project" data-anime="anima-scroll">
                     <img src="/img/projetos/jardim-online-01.jpg" alt="imagem miniatura do projeto" class="img-project">
 
                     <div class="about-project">
@@ -121,7 +124,7 @@
                     </div>
                 </article>
 
-                <article class="project">
+                <article class="project" data-anime="anima-scroll">
                     <img src="/img/projetos/notificacao-de-mensagens.jpg" alt="imagem miniatura do projeto" class="img-project">
 
                     <div class="about-project">
@@ -143,7 +146,7 @@
                     </div>
                 </article>
 
-                <article class="project">
+                <article class="project" data-anime="anima-scroll">
                     <img src="/img/projetos/pagina-de-noticias.jpg" alt="imagem miniatura do projeto" class="img-project">
 
                     <div class="about-project">
@@ -165,7 +168,7 @@
                     </div>
                 </article>
 
-                <article class="project">
+                <article class="project" data-anime="anima-scroll">
                     <img src="/img/projetos/flexblog.jpg" alt="imagem miniatura do projeto" class="img-project">
 
                     <div class="about-project">
@@ -187,7 +190,7 @@
                     </div>
                 </article>
 
-                <article class="project">
+                <article class="project" data-anime="anima-scroll">
                     <img src="/img/projetos/animais-fantasticos.jpg" alt="imagem miniatura do projeto" class="img-project">
 
                     <div class="about-project">
@@ -209,7 +212,7 @@
                     </div>
                 </article>
 
-                <article class="project">
+                <article class="project" data-anime="anima-scroll">
                     <img src="/img/projetos/randon-color-generation.jpg" alt="imagem miniatura do projeto" class="img-project">
 
                     <div class="about-project">
@@ -237,40 +240,46 @@
             </div>
 
             <section class="skills">
-                <div class="skill">
+                <div class="skill" data-anime="anima-scroll">
                     <i class="fa-brands fa-html5 skill-icon"></i>
                     <h4 class="all-title">HTML 5</h4>
-                    <p>linguagem de marcação</p>
+                    <!-- <p>linguagem de marcação</p> -->
                 </div>
 
-                <div class="skill">
+                <div class="skill" data-anime="anima-scroll">
                     <i class="fa-brands fa-css3-alt skill-icon"></i>
                     <h4 class="all-title">CSS 3</h4>
-                    <p>folhas de estilo e responsividade</p>
+                    <!-- <p>folhas de estilo e responsividade</p> -->
                 </div>
 
-                <div class="skill">
+                <div class="skill" data-anime="anima-scroll">
+                    <i class="fa-brands fa-sass"></i>
+                    <h4 class="all-title">SASS</h4>
+                    <!-- <p>folhas de estilo e responsividade</p> -->
+                </div>
+
+                <div class="skill" data-anime="anima-scroll">
                     <i class="fa-brands fa-js skill-icon"></i>
-                    <h4 class="all-title">JavaScript</h4>
-                    <p>linguagem de Programação</p>
+                    <h4 class="all-title">JavaScript ES6</h4>
+                    <!-- <p>linguagem de Programação</p> -->
                 </div>
 
-                <div class="skill">
+                <div class="skill" data-anime="anima-scroll">
                     <i class="fa-brands fa-git-alt skill-icon"></i>
                     <h4 class="all-title">GIT</h4>
-                    <p>controle de versionamento</p>
+                    <!-- <p>controle de versionamento</p> -->
                 </div>
 
-                <div class="skill">
+                <div class="skill" data-anime="anima-scroll">
                     <i class="fa-brands fa-github github-icon skill-icon"></i>
                     <h4 class="all-title">GitHub</h4>
-                    <p>hospedagem e compartilhamento de código</p>
+                    <!-- <p>hospedagem e compartilhamento de código</p> -->
                 </div>
 
-                <div class="skill">
+                <div class="skill" data-anime="anima-scroll">
                     <i class="fa-solid fa-database skill-icon"></i>
                     <h4 class="all-title">SQL</h4>
-                    <p>linguagem de consulta para banco de dados</p>
+                    <!-- <p>linguagem de consulta para banco de dados</p> -->
                 </div>
             </section>
 
@@ -278,7 +287,7 @@
                 <h2 id="contact" class="all-title">contato</h2>
             </div>
 
-            <section class="contact-container">
+            <section class="contact-container" data-anime="anima-scroll">
                 <div class="local">
                     <div class="address">
                         <i class="fa-solid fa-location-dot contact-icon"></i>
@@ -392,7 +401,10 @@
 
     <!-- dark-mode -->
     <script src="/js/dark-mode.js"></script>
-    
+
+    <!-- animação ao scroll -->
+    <script src="/js/animate-scroll.js"></script>
+
     <!-- <script src="/js/submit.js"></script>  -->
 </body>
 </html>

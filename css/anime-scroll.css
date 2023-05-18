@@ -1,0 +1,10 @@
+[data-anime]  {
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(70px);
+}
+
+[data-anime].show-element {
+    opacity: 1;
+    transform: translateY(0);
+}
