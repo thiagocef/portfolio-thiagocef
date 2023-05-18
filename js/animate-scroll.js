@@ -1,28 +1,16 @@
-// todas as divs da section com atritubuto data-anima="scroll"
-const projects = document.querySelectorAll('[data-anime]')
+const animate = document.querySelectorAll('[data-anime]')
 
-console.log(projects)
-// PEGAR A DISTÂNCIA DO SCROLL EM RELAÇÃO AO TOPO DA PÁGINA
 function animeScroll() {
-    // distância do scroll (window.pageYOffset)
-    const windowTop = window.pageYOffset + (window.innerHeight * 0.75) //SEMPRE UTILIZAR ESSE CALCULO
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75) 
 
-    // (window.innerHeight * 0.75) é exatamente onde vai acontecer a animação do elemento
+    animate.forEach(item => {
 
-    // percorre cada caixa
-    // e pega a distância de cada caixa em relação ao topo
-    projects.forEach(box => {
-
-        // comparar a distancia do elemento e do scroll
-        if(windowTop > box.offsetTop) {
-
-            box.classList.add('show-element')
-            console.log('É maior')
+        if(windowTop > item.offsetTop) {
+            item.classList.add('show-element')
         } else {
-            box.classList.remove('show-element')
+            item.classList.remove('show-element')
         }
 
     })
-
 }
 window.addEventListener('scroll', animeScroll)
